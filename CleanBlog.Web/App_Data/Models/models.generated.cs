@@ -24,7 +24,8 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Umbraco.Web.PublishedModels
 {
-	/// <summary>Home</summary>
+	
+    /// <summary>Home</summary>
 	[PublishedModel("home")]
 	public partial class Home : PublishedContentModel, IBasicContentControls
 	{
