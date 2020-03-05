@@ -6,7 +6,16 @@
 @{
     Layout = "master.cshtml";
 }
+@* we are using ModelsBuilder *@
 
-@* the fun starts here *@
+@*<div style="color: @Model.ColourName">
+    <h1>@Model.Title</h1>
+    @Model.MainContent
+    <p>Your favourite colour is @Model.ColourName</p>
+</div>
 
-<h1>@Model.Title</h1>
+@if (Model.ShowImage)
+{
+    <img src="/media/p2ufr25b/yorkie_umbraco.jpg" title="dog picture"/>
+}*@
+
