@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "42aaad234c061799")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "d29899df3e47dafc")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -42,7 +42,7 @@ namespace Umbraco.Web.PublishedModels
 {
 	/// <summary>Home</summary>
 	[PublishedModel("home")]
-	public partial class Home : PublishedContentModel, IBasicContentControls
+	public partial class Home : PublishedContentModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -64,81 +64,6 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
-
-		///<summary>
-		/// Main Content: Enter the main content for this page
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		[ImplementPropertyType("mainContent")]
-		public IHtmlString MainContent => BasicContentControls.GetMainContent(this);
-
-		///<summary>
-		/// Page Title: Enter a title
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		[ImplementPropertyType("pageTitle")]
-		public string PageTitle => BasicContentControls.GetPageTitle(this);
-	}
-
-	// Mixin Content Type with alias "basicContentControls"
-	/// <summary>Basic Content Controls</summary>
-	public partial interface IBasicContentControls : IPublishedContent
-	{
-		/// <summary>Main Content</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		IHtmlString MainContent { get; }
-
-		/// <summary>Page Title</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		string PageTitle { get; }
-	}
-
-	/// <summary>Basic Content Controls</summary>
-	[PublishedModel("basicContentControls")]
-	public partial class BasicContentControls : PublishedContentModel, IBasicContentControls
-	{
-		// helpers
-#pragma warning disable 0109 // new is redundant
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		public new const string ModelTypeAlias = "basicContentControls";
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		public new static IPublishedContentType GetModelContentType()
-			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<BasicContentControls, TValue>> selector)
-			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-#pragma warning restore 0109
-
-		// ctor
-		public BasicContentControls(IPublishedContent content)
-			: base(content)
-		{ }
-
-		// properties
-
-		///<summary>
-		/// Main Content: Enter the main content for this page
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		[ImplementPropertyType("mainContent")]
-		public IHtmlString MainContent => GetMainContent(this);
-
-		/// <summary>Static getter for Main Content</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		public static IHtmlString GetMainContent(IBasicContentControls that) => that.Value<IHtmlString>("mainContent");
-
-		///<summary>
-		/// Page Title: Enter a title
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		[ImplementPropertyType("pageTitle")]
-		public string PageTitle => GetPageTitle(this);
-
-		/// <summary>Static getter for Page Title</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		public static string GetPageTitle(IBasicContentControls that) => that.Value<string>("pageTitle");
 	}
 
 	/// <summary>Folder</summary>
