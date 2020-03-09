@@ -526,6 +526,7 @@
     <Content Include="Views\articleList.cshtml" />
     <Content Include="Views\content.cshtml" />
     <Content Include="Views\contact.cshtml" />
+    <Content Include="Views\Partials\pageHeader.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
