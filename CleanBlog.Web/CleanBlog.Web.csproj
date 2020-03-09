@@ -522,6 +522,8 @@
     <Content Include="Views\Partials\navigation.cshtml" />
     <Content Include="Views\Partials\footer.cshtml" />
     <Content Include="Views\Partials\latestArticles.cshtml" />
+    <Content Include="Views\article.cshtml" />
+    <Content Include="Views\articleList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
