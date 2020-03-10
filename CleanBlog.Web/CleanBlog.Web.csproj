@@ -529,6 +529,7 @@
     <Content Include="Views\Partials\pageHeader.cshtml" />
     <Content Include="Views\error.cshtml" />
     <Content Include="Views\xMLSitemap.cshtml" />
+    <Content Include="Views\Partials\Grid\Clean.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
