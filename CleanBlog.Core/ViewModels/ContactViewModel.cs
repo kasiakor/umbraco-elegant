@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CleanBlog.Core.ViewModels
 {
-    class ContactViewModel
+    public class ContactViewModel
     { 
         [Required(ErrorMessage = "Please enter your name")]
         public string Name { get; set; }
