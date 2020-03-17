@@ -534,6 +534,7 @@
     <Content Include="Views\xMLSitemap.cshtml" />
     <Content Include="Views\Partials\Grid\Clean.cshtml" />
     <Content Include="Views\Partials\Contact\contactForm.cshtml" />
+    <Content Include="Views\Partials\Contact\result.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
