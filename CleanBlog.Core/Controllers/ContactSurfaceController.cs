@@ -5,11 +5,18 @@ using System.Web;
 using System.Web.Mvc;
 using Umbraco.Web;
 using Umbraco.Web.Mvc;
+using Umbraco.Core.Logging;
 
 namespace CleanBlog.Core.Controllers
 {
     public class ContactSurfaceController : SurfaceController
     {
+        //dependency injection
+        private readonly ILogger _logger;
+        public ContactSurfaceController(ILogger logger)
+        {
+            _logger = logger;
+        }
         [HttpGet]
         public ActionResult RenderForm()
         {
@@ -61,7 +68,7 @@ namespace CleanBlog.Core.Controllers
             }
             catch (Exception ex)
             {
-
+                _logger.Error(typeof(ContactSurfaceController), ex, "Error sending contact form"); 
                 return false;
             }
         }
