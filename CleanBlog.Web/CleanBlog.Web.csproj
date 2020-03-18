@@ -435,6 +435,16 @@
     <Content Include="js\jqBootstrapValidation.js" />
     <Content Include="post.html" />
     <Content Include="scripts\contactForm.js" />
+    <None Include="scripts\jquery-1.8.0.intellisense.js" />
+    <Content Include="scripts\jquery-1.8.0.js" />
+    <Content Include="scripts\jquery-1.8.0.min.js" />
+    <None Include="scripts\jquery.validate-vsdoc.js" />
+    <Content Include="scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="scripts\jquery.validate.js" />
+    <Content Include="scripts\jquery.validate.min.js" />
+    <Content Include="scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
