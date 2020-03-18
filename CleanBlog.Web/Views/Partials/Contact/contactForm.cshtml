@@ -1,8 +1,9 @@
 ﻿@inherits UmbracoViewPage<ContactViewModel>
 
-@using CleanBlog.Core.ViewModels
+@using CleanBlog.Core.ViewModels;
 
-<div class="form-outer">
+
+<div id="form-outer">
     @using (Ajax.BeginForm("SubmitForm", "ContactSurface", new AjaxOptions()
     {
         UpdateTargetId = "form-results",
@@ -10,7 +11,7 @@
         InsertionMode = InsertionMode.Replace,
         OnSuccess = "contactForm.showResult",
         OnFailure = "contactForm.showResult"
-    }))
+    }, new { id = "contact-form" }))
     {
 
     }
@@ -18,7 +19,7 @@
     <div class="control-group">
         <div class="form-group floating-label-form-group controls">
             <label>Name</label>
-            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder="Name..."})
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Name..." })
             @Html.ValidationMessageFor(m => m.Name)
         </div>
     </div>
@@ -38,7 +39,7 @@
     </div>
     <br>
     <div class="form-group">
-        <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
+        <button type="submit" class="btn btn-primary contact-submit" id="sendMessageButton">Send</button>
     </div>
 </div>
 <div class="form-results">

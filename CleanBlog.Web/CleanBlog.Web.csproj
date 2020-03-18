@@ -434,6 +434,7 @@
     <Content Include="js\contact_me.js" />
     <Content Include="js\jqBootstrapValidation.js" />
     <Content Include="post.html" />
+    <Content Include="scripts\contactForm.js" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
