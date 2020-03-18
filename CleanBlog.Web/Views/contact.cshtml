@@ -1,9 +1,19 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Umbraco.Web.PublishedModels.Contact>
+@using CleanBlog.Core.ViewModels;
+@using ClientDependency.Core.Mvc;
 @{
     Layout = "master.cshtml";
-}
 
-@* the fun starts here *@
+    // validation
+    Html.EnableClientValidation();
+    Html.EnableUnobtrusiveJavaScript();
+    Html.RequiresJs("https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js");
+    Html.RequiresJs("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js");
+    Html.RequiresJs("/scripts/jquery.validate.min.js");
+    Html.RequiresJs("/scripts/jquery.validate.unobtrusive.min.js");
+    Html.RequiresJs("/scripts/jquery.validate.unobtrusive-ajax.min.js");
+    Html.RequiresJs("/scripts/contactForm.js");
+}
 
 <!-- Page Header -->
 @Html.Partial("~/Views/Partials/pageHeader.cshtml")

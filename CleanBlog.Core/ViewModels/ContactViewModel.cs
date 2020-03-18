@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+
 
 namespace CleanBlog.Core.ViewModels
 {
@@ -21,6 +17,6 @@ namespace CleanBlog.Core.ViewModels
         public string Message { get; set; }
 
         // id to store properties of the form 
-        public int ContactFormId { get; set; }
+        public int ContactPageId { get; set; }
     }
 }

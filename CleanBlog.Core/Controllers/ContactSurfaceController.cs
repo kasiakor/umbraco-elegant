@@ -20,14 +20,15 @@ namespace CleanBlog.Core.Controllers
         [HttpGet]
         public ActionResult RenderForm()
         {
-            ContactViewModel model = new ContactViewModel() { ContactFormId = CurrentPage.Id };
-            return PartialView("~Views/Partial/Contact/contactForm.cshtml", model);
+
+            return PartialView("~/Views/Partials/Contact/contactForm.cshtml",
+            new ContactViewModel() { ContactPageId = CurrentPage.Id });
         }
 
         [HttpPost]
         public ActionResult RenderForm(ContactViewModel model)
         {
-            return PartialView("~Views/Partial/Contact/contactForm.cshtml", model);
+            return PartialView("~/Views/Partials/Contact/contactForm.cshtml", model);
         }
 
         public ActionResult SubmitForm(ContactViewModel model)
@@ -41,11 +42,11 @@ namespace CleanBlog.Core.Controllers
             }
 
             // message to display
-            var contactPage = UmbracoContext.Content.GetById(false, model.ContactFormId);
+            var contactPage = UmbracoContext.Content.GetById(false, model.ContactPageId);
             var successMessage = contactPage.Value<IHtmlString>("successMessage");
             var errorMessage = contactPage.Value<IHtmlString>("errorMessage");
 
-            return PartialView("~Views/Partials/Contact/result.cshtml");
+            return PartialView("~/Views/Partials/Contact/result.cshtml", success ? successMessage : errorMessage);
         }
         public bool SendEmail(ContactViewModel model)
         {
@@ -64,9 +65,10 @@ namespace CleanBlog.Core.Controllers
                 message.From = new MailAddress(fromAddress, fromAddress);
 
                 client.Send(message);
+                _logger.Info(typeof(ContactSurfaceController), "Message sent successfully");
                 return true;
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 _logger.Error(typeof(ContactSurfaceController), ex, "Error sending contact form"); 
                 return false;
