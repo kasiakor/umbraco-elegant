@@ -233,6 +233,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Composing\TreeNodeRenderingComposer.cs" />
     <Compile Include="Controllers\ContactSurfaceController.cs" />
     <Compile Include="Extensions\HtmlExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -254,6 +255,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets" Condition="Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
