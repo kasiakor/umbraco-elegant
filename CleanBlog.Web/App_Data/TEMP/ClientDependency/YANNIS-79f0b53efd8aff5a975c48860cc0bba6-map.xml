@@ -63,4 +63,39 @@
       <file name="/css/clean-blog.min.css" />
     </files>
   </item>
+  <item key="L3ZlbmRvci9qcXVlcnkvanF1ZXJ5Lm1pbi5qczsvdmVuZG9yL2Jvb3RzdHJhcC9qcy9ib290c3RyYXAuYnVuZGxlLm1pbi5qczsvanMvY2xlYW4tYmxvZy5taW4uanM7L3NjcmlwdHMvcGxlYXNlZG9udGdvLmpzOw" file="C:\Users\Kasia\source\repos\CleanBlog.Web\CleanBlog.Web\App_Data\TEMP\ClientDependency\1_a3f9552a9dd4417595136142bd62a40b.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/vendor/jquery/jquery.min.js" />
+      <file name="/vendor/bootstrap/js/bootstrap.bundle.min.js" />
+      <file name="/js/clean-blog.min.js" />
+      <file name="/scripts/pleasedontgo.js" />
+    </files>
+  </item>
+  <item key="L3ZlbmRvci9ib290c3RyYXAvY3NzL2Jvb3RzdHJhcC5taW4uY3NzOy9jb250YWN0L3ZlbmRvci9mb250YXdlc29tZS1mcmVlL2Nzcy9hbGwubWluLmNzczs" file="C:\Users\Kasia\source\repos\CleanBlog.Web\CleanBlog.Web\App_Data\TEMP\ClientDependency\1_091d2fb7b61245d39d08daa63b20c08d.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/vendor/bootstrap/css/bootstrap.min.css" />
+    </files>
+  </item>
+  <item key="L3NjcmlwdHMvanF1ZXJ5LnZhbGlkYXRlLm1pbi5qczsvc2NyaXB0cy9qcXVlcnkudmFsaWRhdGUudW5vYnRydXNpdmUubWluLmpzOy9zY3JpcHRzL2pxdWVyeS51bm9idHJ1c2l2ZS1hamF4Lm1pbi5qczsvc2NyaXB0cy9jb250YWN0Rm9ybS5qczsvdmVuZG9yL2pxdWVyeS9qcXVlcnkubWluLmpzOy92ZW5kb3IvYm9vdHN0cmFwL2pzL2Jvb3RzdHJhcC5idW5kbGUubWluLmpzOy9qcy9jbGVhbi1ibG9nLm1pbi5qczsvc2NyaXB0cy9wbGVhc2Vkb250Z28uanM7" file="C:\Users\Kasia\source\repos\CleanBlog.Web\CleanBlog.Web\App_Data\TEMP\ClientDependency\1_50a15a78f72d4376885be0adb1cd3662.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/scripts/jquery.validate.min.js" />
+      <file name="/scripts/jquery.validate.unobtrusive.min.js" />
+      <file name="/scripts/jquery.unobtrusive-ajax.min.js" />
+      <file name="/scripts/contactForm.js" />
+      <file name="/vendor/jquery/jquery.min.js" />
+      <file name="/vendor/bootstrap/js/bootstrap.bundle.min.js" />
+      <file name="/js/clean-blog.min.js" />
+      <file name="/scripts/pleasedontgo.js" />
+    </files>
+  </item>
+  <item key="L3ZlbmRvci9ib290c3RyYXAvY3NzL2Jvb3RzdHJhcC5taW4uY3NzOy9ibG9nL3ZlbmRvci9mb250YXdlc29tZS1mcmVlL2Nzcy9hbGwubWluLmNzczs" file="C:\Users\Kasia\source\repos\CleanBlog.Web\CleanBlog.Web\App_Data\TEMP\ClientDependency\1_9848b64dfd754e6dbf5009a7b18ef438.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/vendor/bootstrap/css/bootstrap.min.css" />
+    </files>
+  </item>
+  <item key="L3ZlbmRvci9ib290c3RyYXAvY3NzL2Jvb3RzdHJhcC5taW4uY3NzOy9ibG9nL3Rlc3QtYXJ0aWNsZS92ZW5kb3IvZm9udGF3ZXNvbWUtZnJlZS9jc3MvYWxsLm1pbi5jc3M7" file="C:\Users\Kasia\source\repos\CleanBlog.Web\CleanBlog.Web\App_Data\TEMP\ClientDependency\1_96d5186e8cfd4fd296de5b49126e0167.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/vendor/bootstrap/css/bootstrap.min.css" />
+    </files>
+  </item>
 </map>

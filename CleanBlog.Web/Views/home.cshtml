@@ -24,7 +24,7 @@
 <!-- Page Header -->
 @Html.Partial("~/Views/Partials/pageHeader.cshtml")
 
-@Html.Partial("~/Views/Partials/latestArticles.cshtml")
+@Html.CachedPartial("~/Views/Partials/latestArticles.cshtml", Model, 30, true)
 
 @section ScriptsBottom
 {

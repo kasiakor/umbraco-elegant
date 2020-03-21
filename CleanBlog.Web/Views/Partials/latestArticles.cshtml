@@ -16,6 +16,7 @@
                 @foreach(var article in articles)
                 {
                     <div class="post-preview">
+                        <p>@DateTime.Now</p>
                         <a href="@article.Url">
                             <h2 class="post-title">
                                 @*@(article.HasValue("title") ? article.Value("title") : article.Name)*@
